@@ -11,7 +11,7 @@
     </Application.DataTemplates>
 
     <Application.Styles>
-         <pipboy:PipboyTheme />
-<!--        <FluentTheme/>-->
+         <!--<pipboy:PipboyTheme />-->
+         <FluentTheme />
     </Application.Styles>
 </Application>
