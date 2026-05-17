@@ -1,0 +1,31 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="using:Playground.Controls">
+    <ControlTheme x:Key="{x:Type controls:NoReloadTabControl}"
+                  TargetType="controls:NoReloadTabControl">
+        <Setter Property="Template">
+            <ControlTemplate>
+                <Border Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        CornerRadius="{TemplateBinding CornerRadius}">
+                    <DockPanel>
+                        <ItemsPresenter Name="PART_ItemsPresenter"
+                                        DockPanel.Dock="Top"
+                                        ItemsPanel="{TemplateBinding ItemsPanel}">
+                            <ItemsPresenter.Styles>
+                                <Style Selector="TabItem">
+                                    <Setter Property="Theme" Value="{DynamicResource {x:Type TabItem}}" />
+                                </Style>
+                            </ItemsPresenter.Styles>
+                        </ItemsPresenter>
+
+                        <Panel Name="PART_NoReloadItemsHolder"
+                               HorizontalAlignment="Stretch"
+                               VerticalAlignment="Stretch" />
+                    </DockPanel>
+                </Border>
+            </ControlTemplate>
+        </Setter>
+    </ControlTheme>
+</ResourceDictionary>

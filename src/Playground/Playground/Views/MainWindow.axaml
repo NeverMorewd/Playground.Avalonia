@@ -1,22 +1,25 @@
-<pipboy:PipboyWindow xmlns="https://github.com/avaloniaui"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:vm="using:Playground.ViewModels"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:views="using:Playground.Views"
-        WindowDecorations="BorderOnly"        
-        xmlns:pipboy="https://github.com/NeverMorewd/Pipboy.Avalonia"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-Width="1200"
-Height="760"
-MinWidth="800"
+<pipboy:PipboyWindow
+    x:Class="Playground.Views.MainWindow"
+    xmlns="https://github.com/avaloniaui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:pipboy="https://github.com/NeverMorewd/Pipboy.Avalonia"
+    xmlns:views="using:Playground.Views"
+    xmlns:vm="using:Playground.ViewModels"
+    Title="Playground"
+    Width="1200"
+    Height="760"
+    MinWidth="800"
     MinHeight="560"
-        x:Class="Playground.Views.MainWindow"
-        Icon="/Assets/avalonia-logo.ico"
-        Title="Playground">
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    Icon="/Assets/avalonia-logo.ico"
+    WindowDecorations="BorderOnly"
+    mc:Ignorable="d">
     <views:MainView />
     <pipboy:PipboyWindow.TitleBarContent>
-        <StackPanel></StackPanel>
+        <StackPanel />
     </pipboy:PipboyWindow.TitleBarContent>
 </pipboy:PipboyWindow>
 

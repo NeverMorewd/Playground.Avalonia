@@ -1,6 +1,4 @@
-using Avalonia;
 using Avalonia.Controls;
-using Avalonia.Markup.Xaml;
 
 namespace Playground.Views;
 
@@ -13,6 +11,11 @@ public partial class TestWindow : Window
 
     private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        this.WindowState = WindowState.Minimized;
+        WindowState = WindowState.Minimized;
+    }
+
+    private void Close_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    { 
+        Close();
     }
 }
