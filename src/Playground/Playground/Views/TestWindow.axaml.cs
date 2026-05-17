@@ -10,4 +10,9 @@ public partial class TestWindow : Window
     {
         InitializeComponent();
     }
+
+    private void Button_Click(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        this.WindowState = WindowState.Minimized;
+    }
 }

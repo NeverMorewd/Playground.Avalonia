@@ -6,5 +6,8 @@
         x:Class="Playground.Views.TestWindow"
         WindowDecorations="BorderOnly"       
         Title="TestWindow">
-  Welcome to Avalonia!
+    <StackPanel>
+        <Button Click="Button_Click">min</Button>
+        <TextBlock>  Welcome to Avalonia!</TextBlock>
+    </StackPanel>
 </Window>
